@@ -51,6 +51,11 @@ describe('PinyinMatch', () => {
       assert.deepEqual([0, 0], PinyinMatch.match('嫚', 'man'))
     })
   })
+  describe('#getFirstPinyinChar', () => {
+    it('返回字符的拼音首字母', () => {
+      assert.deepEqual('b', PinyinMatch.getFirstPinyinChar('北'))
+    })
+  })
 })
 
 describe('PinyinMatch2', () => {
